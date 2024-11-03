@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens:{
+        'xs': '475px',       // Custom screen size for extra small devices
+      },
+      fontFamily:{
+          sen: ["Sen", 'serif'],
+          roboto:[  "Roboto", 'sans-serif'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
