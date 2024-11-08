@@ -32,25 +32,21 @@ export default function About() {
           </ul>
         </div>
 
-        <div className={`mt-12 font-roboto ${activeSection==='skills'?'block':'hidden'} `}>
-          {/* <p className='text-[20px] my-1 '>Frontend Designing and Development</p>
-        <p className='text-red-400 text-[16px] my-1 mb-2'>Level - Intermediate</p>
-          <p className='text-[20px] my-1 '>UX / UI  Designing</p>
-        <p className='text-red-400 text-[16px] my-1 mb-2'>Level - Intermediate</p> */}
+        <div className={`mt-12 font-roboto ${activeSection==='skills'?'block animate-fadeIn':'hidden animate-fadeOut'} `}>
           <p className='text-[20px] my-1 '>React JS</p>
         <p className='text-red-400 text-[16px] my-1 mb-2'>Level - Intermediate</p>
           <p className='text-[20px] my-1 '>NEXT JS</p>
         <p className='text-red-400 text-[16px] my-1 mb-2'>Level - Intermediate</p>
         </div>
 
-        <div className={`mt-12 font-roboto ${activeSection==='education'?'block':'hidden'} `}>
+        <div className={`mt-12 font-roboto ${activeSection==='education'?'block animate-fadeIn':'hidden animate-fadeOut'} `}>
           <p className='text-red-400 text-[16px] my-1'>2020 to 2022</p>
           <p className='text-[20px] my-1'>Matric - Science</p>
           <p className='text-red-400 text-[16px] my-1 mt-5'>2022 to 2024</p>
           <p className='text-[20px] my-1'>FSC - Pre Engineering</p>
         </div>
 
-        <div className={`mt-12 font-roboto ${activeSection==='experience'?'block':'hidden'} `}>
+        <div className={`mt-12 font-roboto ${activeSection==='experience'?'block animate-fadeIn':'hidden animate-fadeOut'} `}>
           <p className='text-[20px] my-1'>Fresher</p>
           <p className='text-red-400 text-[16px] my-1'>2023 to 2024</p> 
           <p className='text-[20px] my-1'>Self Learing Experience</p>

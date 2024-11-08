@@ -27,11 +27,11 @@ export default function Navbar() {
       <nav>
        
         <ul id='toggleMenu' className="font-roboto  md:flex-row mt-2.5  text-[20px] hidden   md:flex  lg:mr-20 md:mr-6 flex-col  ">
-          <li  onClick={()=> scrollToSection('home')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc] hover:border-b-[3px] hover:text-[#77effc]">Home</li>
-          <li  onClick={()=> scrollToSection('about')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc] hover:border-b-[3px] hover:text-[#77effc]">About</li>
-          <li  onClick={()=> scrollToSection('skills')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc] hover:border-b-[3px] hover:text-[#77effc]">Skills</li>
-          <li  onClick={()=> scrollToSection('portfolio')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc] hover:border-b-[3px] hover:text-[#77effc]">Portfolio</li>
-          <li  onClick={()=> scrollToSection('contact')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc] hover:border-b-[3px] hover:text-[#77effc]">Contact</li>
+          <li  onClick={()=> scrollToSection('home')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75  "> Home</li>
+          <li  onClick={()=> scrollToSection('about')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> About</li>
+          <li  onClick={()=> scrollToSection('skills')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> Skills</li>
+          <li  onClick={()=> scrollToSection('portfolio')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> Portfolio</li>
+          <li  onClick={()=> scrollToSection('contact')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> Contact</li>
         </ul>
       </nav>
     </header>

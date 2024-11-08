@@ -17,7 +17,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc]  w-[65%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc]  animate-widthExpand65 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*1 ------------------------------------------------ */}
@@ -29,7 +29,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc] w-[90%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc] animate-widthExpand90 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*2 ------------------------------------------------ */}
@@ -41,7 +41,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc] w-[65%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc] animate-widthExpand65 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*3 ------------------------------------------------ */}
@@ -53,7 +53,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc] w-[85%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc] animate-widthExpand85 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*4 ------------------------------------------------ */}
@@ -65,7 +65,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc] w-[75%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc] animate-widthExpand75 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*5 ------------------------------------------------ */}
@@ -77,7 +77,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc] w-[70%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc] animate-widthExpand70 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*6 ------------------------------------------------ */}
@@ -89,7 +89,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc] w-[60%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc] animate-widthExpand60 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*7 ------------------------------------------------ */}
@@ -106,7 +106,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc] w-[40%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc] animate-widthExpand40 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*1 ------------------------------------------------ */}
@@ -118,7 +118,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc] w-[80%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc] animate-widthExpand80 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*2 ------------------------------------------------ */}
@@ -130,7 +130,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc] w-[75%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc] animate-widthExpand75 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*3 ------------------------------------------------ */}
@@ -142,7 +142,7 @@ export default function Skills() {
             </div>
               <div className=' justify-center flex mb-10' >
                 <span className='w-[70%] h-5  bg-gray-400 rounded-full'>
-                  <div className='bg-[#77effc] w-[60%] h-5 rounded-full'></div>
+                  <div className='bg-[#77effc] animate-widthExpand60 h-5 rounded-full'></div>
                 </span>
               </div>
                 {/*4 ------------------------------------------------ */}
