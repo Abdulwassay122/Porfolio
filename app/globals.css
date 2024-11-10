@@ -21,3 +21,10 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.onViewAnimation{
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+html{
+  scroll-behavior: smooth;
+}

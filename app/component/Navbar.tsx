@@ -15,9 +15,9 @@ export default function Navbar() {
   }
   return (
     <>
-    <header  className="flex py-5 justify-between md:flex-row flex-col">
+    <header  className="h-[85px] flex py-5 justify-between md:flex-row flex-col  bg-black sticky top-0 z-10">
       <div className='flex justify-between'>
-      <div className="text-[30px] font-semibold font-sen pl-10 ">
+      <div className="text-[30px] font-semibold font-sen pl-10 cursor-pointer ">
       <span className="text-[#77effc] cursor-pointer ">ABDUL</span> WASSAY
       </div>
       <button className="font-roboto  md:flex-row mt-2.5  text-[20px] block items-center  md:hidden  lg:mr-20 md:mr-6 flex-col  ">
@@ -26,12 +26,12 @@ export default function Navbar() {
         </div>
       <nav>
        
-        <ul id='toggleMenu' className="font-roboto  md:flex-row mt-2.5  text-[20px] hidden   md:flex  lg:mr-20 md:mr-6 flex-col  ">
-          <li  onClick={()=> scrollToSection('home')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75  "> Home</li>
-          <li  onClick={()=> scrollToSection('about')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> About</li>
-          <li  onClick={()=> scrollToSection('skills')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> Skills</li>
-          <li  onClick={()=> scrollToSection('portfolio')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> Portfolio</li>
-          <li  onClick={()=> scrollToSection('contact')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> Contact</li>
+        <ul id='toggleMenu' className="font-roboto  md:flex-row mt-2.5  text-[20px] hidden bg-black   md:flex  lg:mr-20 md:mr-6 flex-col  ">
+          <li  onClick={()=> scrollToSection('home')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc] w-fit  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> Home</li>
+          <li  onClick={()=> scrollToSection('about')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc] w-fit  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> About</li>
+          <li  onClick={()=> scrollToSection('skills')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  w-fit hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> Skills</li>
+          <li  onClick={()=> scrollToSection('portfolio')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc] w-fit  hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> Portfolio</li>
+          <li  onClick={()=> scrollToSection('contact')} className="sm:mx-3 mx-10 cursor-pointer hover:border-solid hover:border-[#77effc]  w-fit hover:border-b-[3px] hover:text-[#77effc] transition-all duration-75   "> Contact</li>
         </ul>
       </nav>
     </header>

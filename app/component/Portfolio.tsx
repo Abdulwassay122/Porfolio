@@ -15,7 +15,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <section id='portfolio' className=' py-14 bg-[#0e1010]'>
+      <section id='portfolio' className=' py-14 bg-[#0e1010] '>
         <h1 className='text-6xl font-sen font-semibold flex justify-center'>My Work</h1>
         {/* // nav links */}
         <div className=''>
