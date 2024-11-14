@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <>
-      <section id='about' className=' flex pt-24 lg:pl-36  sm:pl-16 pl-8 pb-24 bg-[#0e1010]  '>
+      <section id='about' className=' flex pt-24 lg:pl-36  sm:pl-16 pl-8 pb-24 bg-[#0e1010] '>
         {/* image */}
         <div>
           <img className='lg:h-[600px] md:h-[450px] rounded-md md:block hidden'  src={pic.src} alt="" />
@@ -26,7 +26,7 @@ export default function About() {
         </div>
         {/* skill exp edu */}
         <div>
-          <ul id="nav-links" className='font-roboto flex text-xl'>
+          <ul id="nav-links" className='font-roboto flex text-xl '>
             <li><button onClick={()=>setActiveSection('skills')} className='mt-10 mr-4 hover:text-[#77effc]' ><span id="skills"  className={` ${activeSection === 'skills' ? 'border-b-[3px] border-[#77effc] border-solid pb-1 ' : ''}`}>Ski</span>lls </button></li>
             <li><button onClick={()=>setActiveSection('education')} className='mt-10 mx-4 hover:text-[#77effc]' ><span id="education" className={` ${activeSection === 'education' ? 'border-b-[3px] border-[#77effc] border-solid pb-1' : ''}`}>Edu</span>caton </button></li>
             <li><button onClick={()=>setActiveSection('experience')} className='mt-10 mx-4 hover:text-[#77effc]' ><span id="experience" className={` ${activeSection === 'experience' ? 'border-b-[3px] border-[#77effc] border-solid pb-1' : ''}`}>Exp</span>erience </button></li>

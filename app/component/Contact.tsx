@@ -10,7 +10,7 @@ import github from './images/image.png'
 export default function Contact() {
   return (
     <>
-      <section id='contact' className='py-20   bg-black'>
+      <section id='contact' className='py-20   bg-black '>
         <div className="flex justify-between md:flex-row  flex-col">
         <div className='md:w-[40%] sm:w-[80%]   lg:ml-32 sm:ml-16 ml-10    '>
             <div className='mb-9'>

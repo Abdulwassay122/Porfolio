@@ -11,7 +11,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      <section id='home' className='flex sm:flex-row  mt-10 mb-10 justify-between  '>
+      <section id='home' className='flex sm:flex-row  pt-10 pb-10 justify-between bg-black '>
         <div className=' lg:mt-32  sm:mt-16  sm:ml-10 ml-5  md: mt-16 md:ml-20 animate-slideInLeft'>
           <div className='text-2xl md:text-3xl  font-sen font-semibold  '>Hello It's me</div>
           <div className='text-6xl md:text-8xl  font-sen font-semibold'>ABDUL <div className='text-[#77effc]'>WASSAY</div></div>

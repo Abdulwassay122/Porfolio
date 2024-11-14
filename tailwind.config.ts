@@ -74,7 +74,7 @@ const config: Config = {
         widthExpand75: 'widthExpand75 1s ease-out forwards',
         widthExpand70: 'widthExpand70 1s ease-out forwards',
         widthExpand80: 'widthExpand80 1s ease-out forwards',
-        widthExpand100: 'widthExpand100 5s ease-out forwards',
+        widthExpand100: 'widthExpand100 0.2s ease-out forwards',
         fadeIn: 'fadeIn 0.3s ease-out forwards',
         fadeOut: 'fadeOut 0.3s ease-out forwards',
       
