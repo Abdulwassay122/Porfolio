@@ -62,6 +62,10 @@ const config: Config = {
           '0%': { opacity: '1', transform: 'translateX(0)' },
           '100%': { opacity: '0', transform: 'translateX(-100px)' },
         },
+        height0to100: {
+          '0%': { height: '0%' },
+          '100%': {  height: '100%' },
+        },
       },
       animation:{
         slideInLeft: 'slideInLeft 0.5s ease-out forwards',
@@ -77,6 +81,7 @@ const config: Config = {
         widthExpand100: 'widthExpand100 0.2s ease-out forwards',
         fadeIn: 'fadeIn 0.3s ease-out forwards',
         fadeOut: 'fadeOut 0.3s ease-out forwards',
+        height0to100: 'height0to100 0.5s ease-out forwards',
       
       },
       screens:{

@@ -1,84 +1,100 @@
-"use client"
-import React,{useState} from 'react'
-import textUtils from './images/screencapture-text-utils-steel-ten-vercel-app-2024-10-26-09_21_08.png'
-import alarmClock from './images/screencapture-abdulwassay122-github-io-Alarm-Clock-2024-10-26-09_23_03.png'
-import resumeBuilder from './images/screencapture-resume-builder-122598-vercel-app-2024-10-26-09_21_35.png'
-import passGenerator from './images/screencapture-abdulwassay122-github-io-Javascript-Password-Generator-2024-10-26-09_22_32.png'
-import assignment07 from './images/screencapture-localhost-3000-2024-10-19-14_57_48.png'
-import externallink from './images/externalLink.png'
+"use client";
+import React, { useState } from "react";
+import textUtils from "./images/screencapture-text-utils-steel-ten-vercel-app-2024-10-26-09_21_08.png";
+import alarmClock from "./images/screencapture-abdulwassay122-github-io-Alarm-Clock-2024-10-26-09_23_03.png";
+import resumeBuilder from "./images/screencapture-resume-builder-122598-vercel-app-2024-10-26-09_21_35.png";
+import passGenerator from "./images/screencapture-abdulwassay122-github-io-Javascript-Password-Generator-2024-10-26-09_22_32.png";
+import assignment06 from "./images/ass-3.png";
+import upArrow from "./images/upArrow.png";
+import htmlCSSPortfolio from "./images/html css portfolio.png";
+import externallink from "./images/visit22.png";
 
-
-type Section = 'all' | 'nextjs' | 'reactjs';
+;
 
 export default function Portfolio() {
-    const [activeSection, setActiveSection] = useState<Section>('all');
+  const [activeSection, setActiveSection] = useState<boolean>(false);
 
   return (
     <>
-      <section id='portfolio' className=' py-14 bg-[#0e1010]'>
-        <h1 className='text-6xl font-sen font-semibold flex justify-center'>My Work</h1>
-        {/* // nav links */}
-        <div className=''>
-          <ul id="nav-links" className='font-roboto flex text-xl justify-center'>
-            {/* nav link */}
-            <li><button onClick={()=>setActiveSection('all')} className='mt-10 mr-4 hover:text-[#77effc]' ><span id="All"  className={` ${activeSection === 'all' ? 'border-b-[3px] border-[#77effc] border-solid pb-1' : ''}`}>Al</span>l </button></li>
-            {/* nav link */}
-            <li><button onClick={()=>setActiveSection('nextjs')} className='mt-10 mx-4 hover:text-[#77effc]' ><span id="Next JS" className={` ${activeSection === 'nextjs' ? 'border-b-[3px] border-[#77effc] border-solid pb-1' : ''}`}>Next</span>JS </button></li>
-            {/* nav link */}
-            <li><button onClick={()=>setActiveSection('reactjs')} className='mt-10 mx-4 hover:text-[#77effc]' ><span id="React JS" className={` ${activeSection === 'reactjs' ? 'border-b-[3px] border-[#77effc] border-solid pb-1' : ''}`}>React</span>JS </button></li>
-          </ul>
-        </div>
-        {/* // work tabs ***all*** */}
-        <div className={`flex justify-center ${activeSection==='all'?'block':'hidden'}`}>
-        <div className='grid md:grid-cols-3 sm:grid-cols-2 justify-evenly xl:w-[60%] lg:w-[80%] sm:w-[95%] '>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1`}><a target='_blank' href="https://text-utils-steel-ten.vercel.app/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50 ' src={textUtils.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://resume-builder-122598.vercel.app/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={resumeBuilder.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://abdulwassay122.github.io/Alarm-Clock/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={alarmClock.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://abdulwassay122.github.io/Javascript-Password-Generator/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={passGenerator.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://github.com/Abdulwassay122/Aggignment-03.git"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={assignment07.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-        </div>
-        </div>
+      <section id="portfolio" className=" font-roboto py-14 bg-[#0e1010] flex flex-col items-center">
+        <h1 className="text-6xl font-sen font-semibold flex justify-center">
+          My Work
+        </h1>
 
-        {/* // work tabs ***nextjs*** */}
-        <div className={`flex justify-center ${activeSection==='nextjs'?'block':'hidden'}`}>
-        <div className='grid md:grid-cols-3 grid-cols-2 xl:w-[60%] lg:w-[80%] sm:w-[95%] '>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://resume-builder-122598.vercel.app/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={resumeBuilder.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://text-utils-steel-ten.vercel.app/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50 ' src={textUtils.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://abdulwassay122.github.io/Alarm-Clock/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={alarmClock.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://github.com/Abdulwassay122/Aggignment-03.git"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={assignment07.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://abdulwassay122.github.io/Javascript-Password-Generator/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={passGenerator.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-        </div>
-        </div>
+        <div className="w-[95%] my-[70px] grid row-auto 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center gap-20">
+            {/* tabs */}
+            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
+              <img className="w-full h-full " src={assignment06.src} alt="" />
+              <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
+                <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
+                  <h4 className="font-bold text-xl">Static Design Responsive</h4>
+                  <p className="text-center">Contert Figma design using taiwind and nextjs.</p>
+                  <a target="_blank" href="https://ass-06-tailwind-design.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                </div>
+              </div>
+            </div>
+            {/* tabs */}
+            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
+              <img className="w-full h-full " src={textUtils.src} alt="" />
+              <div className=" w-full h-0   absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
+                <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
+                  <h4 className="font-bold text-xl">TextUtils</h4>
+                  <p className="text-center">TextUtis is text utility tool you can use to modify your text.</p>
+                  <a target="_blank" href="https://text-utils-steel-ten.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                </div>
+              </div>
+            </div>
+            {/* tabs */}
+            <div className={`w-[300px] h-[400px] relative rounded-lg group overflow-hidden  lg:block  sm:${activeSection===true?'block':'hidden'} `}>
+              <img className="w-full h-full " src={resumeBuilder.src} alt="" />
+              <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
+                <div className="w-[80%] inset-0 overflow-hidden  h-full flex flex-col items-center justify-center gap-3">
+                  <h4 className="font-bold text-xl">Resume Builder</h4>
+                  <p className="text-center">Resume Builder here you can enter your details and create your resume.</p>
+                  <a target="_blank" href="https://resume-builder-122598.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                </div>
+              </div>
+            </div>
+            {/* tabs */}
+            <div className={`w-[300px] h-[400px] relative rounded-lg group overflow-hidden  2xl:block ${activeSection===true?'block':'hidden'} `}>
+              <img className="w-full h-full " src={passGenerator.src} alt="" />
+              <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
+                <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
+                  <h4 className="font-bold text-xl">Password Generator</h4>
+                  <p className="text-center">Generates normal, strong, weak Password as you need. </p>
+                  <a target="_blank" href="https://abdulwassay122.github.io/Javascript-Password-Generator"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                </div>
+              </div>
+            </div>
+           
+            {/* tabs */}
+            <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'}`}>
+              <img className="w-full h-full " src={alarmClock.src} alt="" />
+              <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
+                <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
+                  <h4 className="font-bold text-xl">Alarm Clock</h4>
+                  <p className="text-center">Alarm Clock you can set timmer.</p>
+                  <a target="_blank" href="https://abdulwassay122.github.io/Alarm-Clock/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                </div>
+              </div>
+            </div>
+            {/* tabs */}
+            <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'}`}>
+              <img className="w-full h-full " src={htmlCSSPortfolio.src} alt="" />
+              <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
+                <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
+                  <h4 className="font-bold text-xl">Portfolio</h4>
+                  <p className="text-center">Multipage Potfolio using custom CSS.</p>
+                  <a target="_blank" href="https://abdulwassay122.github.io/Alarm-Clock/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                </div>
+              </div>
+            </div>
 
-        {/* // work tabs ***reactjs*** */}
-        <div className={`flex justify-center ${activeSection==='reactjs'?'block':'hidden'}`}>
-        <div className='grid md:grid-cols-3 grid-cols-2 xl:w-[60%] lg:w-[80%] sm:w-[95%]'>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://abdulwassay122.github.io/Javascript-Password-Generator/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={passGenerator.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://resume-builder-122598.vercel.app/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={resumeBuilder.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://abdulwassay122.github.io/Alarm-Clock/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={alarmClock.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://github.com/Abdulwassay122/Aggignment-03.git"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50' src={assignment07.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
-          {/* worktab */}
-          <div className={`relative my-5 mt-10 sm:w-60 sm:h-48 group h-36 w-48 mx-1 `}><a target='_blank' href="https://text-utils-steel-ten.vercel.app/"><img className='h-full w-full rounded-2xl transition-opacity duration-300 group-hover:opacity-50 ' src={textUtils.src} alt="" /><span className='absolute inset-0 flex items-center justify-center text-white text-xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-roboto'>Visit <img className='h-4 ml-1' src={externallink.src} alt="" /></span></a></div>
         </div>
-        </div>
-
-
+            <button onClick={()=>setActiveSection(true)}  className={`bg-[#77effc] py-2 px-6 rounded-md mt-5 sm:ml-7 ml-0 font-roboto font-semibold flex ${activeSection===false?'block':'hidden'}`}>View All<img className="h-3 mt-[5px] ml-[5px]" src={upArrow.src} alt="" /></button>
+            <button onClick={()=>setActiveSection(false)}  className={`bg-[#77effc] py-2 px-6 rounded-md mt-5 sm:ml-7 ml-0 font-roboto flex  font-semibold ${activeSection===true?'block':'hidden'}`}>Hide<img className="rotate-180 h-3 mt-[6px] ml-[5px]" src={upArrow.src} alt="" /></button>
 
       </section>
     </>
-  )
+  );
 }

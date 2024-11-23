@@ -16,7 +16,7 @@ export default function Navbar() {
   }
   return (
     <>
-    <header  className="h-[85px] flex py-5 justify-between md:flex-row flex-col sticky top-0 z-10  bg-black ">
+    <header  className="h-[85px] flex py-5 justify-between md:flex-row flex-col sticky top-0 z-20  bg-black ">
       <div className='flex justify-between'>
       <div className="text-[30px] font-semibold font-sen pl-10 cursor-pointer ">
       <span className="text-[#77effc] cursor-pointer ">ABDUL</span> WASSAY

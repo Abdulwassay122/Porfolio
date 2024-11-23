@@ -12,7 +12,7 @@ export default function Contact() {
     <>
       <section id='contact' className='py-20   bg-black '>
         <div className="flex justify-between md:flex-row  flex-col">
-        <div className='md:w-[40%] sm:w-[80%]   lg:ml-32 sm:ml-16 ml-10    '>
+        <div className='md:w-[40%] sm:w-[80%]   lg:ml-32 sm:ml-16 xs:ml-10 ml-5    '>
             <div className='mb-9'>
                 <h1 className=' text-6xl font-sen font-semibold'>Contact Me</h1>
             </div>
@@ -29,7 +29,7 @@ export default function Contact() {
             <button  className='bg-[#77effc] py-2 px-6 mx-2  rounded-md mt-10 font-roboto font-semibold'>Download CV</button>
           </div>
         </div>
-        <div className='md:w-[50%] sm:w-[80%]   md:ml-0 sm:ml-16 ml-10 font-roboto text-xl md:mr-0 sm:mr-10 mr-5'>
+        <div className='md:w-[50%] sm:w-[80%]   md:ml-0 sm:ml-16 xs:ml-10 ml-5 font-roboto text-xl md:mr-0 sm:mr-10 mr-5'>
             <div className='md:w-[80%] my-5  w-[100%] '>
                  <input placeholder='Your Name' className=' w-[100%] bg-[#202020] h-10 rounded-sm px-4' type="text" />
             </div>
