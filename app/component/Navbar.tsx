@@ -29,7 +29,7 @@ export default function Navbar() {
         </div>
       <nav>
        
-        <ul id='toggleMenu' className={`font-roboto md:flex-row mt-2.5  text-[20px] md:bg-black md:h-full bg-[#77effc]   md:flex  lg:mr-20 md:mr-6 flex-col md:w-full w-[150px] h-screen md:relative absolute right-0 z-30  ${menuOpen ? 'animate-slideInNav':'animate-slideOutNav'}`}>
+        <ul id='toggleMenu' className={`font-roboto md:flex-row mt-2.5 overflow-hidden text-[20px] md:bg-black md:h-full bg-[#77effc]   md:flex  lg:mr-20 md:mr-6 flex-col md:w-full w-[150px] h-screen md:relative absolute right-0 z-30 md:animate-none  ${menuOpen ? 'animate-slideInNav':'animate-slideOutNav'}`}>
           <div><li  onClick={()=> scrollToSection('home')} className="md:mx-3 md:my-0 my-3  mx-5 cursor-pointer  hover:widthExpand100  md:hover:text-[#77effc] w-fit"><div className='hover:animate-widthExpand100 hover:border-solid md:hover:border-[#77effc] hover:border-[#ffffff] hover:border-b-[3px]'>Home</div> </li></div>
           <div><li  onClick={()=> scrollToSection('about')} className="md:mx-3 md:my-0 my-3  mx-5 cursor-pointer  hover:widthExpand100  md:hover:text-[#77effc] w-fit"><div className='hover:animate-widthExpand100 hover:border-solid md:hover:border-[#77effc] hover:border-[#ffffff] hover:border-b-[3px]'>About</div> </li></div>
           <div><li  onClick={()=> scrollToSection('skills')} className="md:mx-3 md:my-0 my-3  mx-5 cursor-pointer  hover:widthExpand100  md:hover:text-[#77effc] w-fit"><div className='hover:animate-widthExpand100 hover:border-solid md:hover:border-[#77effc] hover:border-[#ffffff] hover:border-b-[3px]'>Skill</div> </li></div>
