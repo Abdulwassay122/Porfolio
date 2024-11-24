@@ -9,6 +9,10 @@ import github from './images/image.png'
 import Image from 'next/image'
 
 export default function Home() {
+  function scrollToSection(id:string){
+    const section:any = document.getElementById(id)
+    section.scrollIntoView({ behavior: 'smooth' })
+  }
   return (
     <>
       <section id='home' className='flex sm:flex-row  pt-10 pb-10 justify-between bg-black  '>
@@ -24,8 +28,8 @@ export default function Home() {
           <a target='_blank' href="https://github.com/Abdulwassay122?tab=repositories"><img className='h-8 m-2 mx-3' src={github.src} alt="" /></a>
           </div>
           <div className='flex flex-row '>
-            <button  className='bg-[#77effc] py-2 px-6 rounded-md mt-5 font-roboto font-semibold'>Download CV</button>
-            <button  className='bg-[#77effc] py-2 px-6 rounded-md mt-5 ml-7 font-roboto font-semibold'>Contact</button>
+            <button  className='bg-[#77effc] py-2 px-6 rounded-md mt-5 font-roboto font-semibold'><a target='_blank' href="https://www.canva.com/design/DAGXZCin1sA/fRCX8gDpUaCc-ladkssLUg/view?utm_content=DAGXZCin1sA&utm_campaign=designshare&utm_medium=link&utm_source=editor">Download CV</a></button>
+            <button onClick={()=> scrollToSection('contact')}  className='bg-[#77effc] py-2 px-6 rounded-md mt-5 ml-7 font-roboto font-semibold'>Contact</button>
           </div>
         </div>
         {/* image */}

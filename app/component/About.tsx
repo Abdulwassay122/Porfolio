@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <>
-      <section id='about' className=' flex pt-24 lg:pl-36  sm:pl-16 pl-8 pb-24 bg-[#0e1010] '>
+      <section id='about' className=' flex pt-16 lg:pl-36  sm:pl-16 pl-8 pb-24 bg-[#0e1010]'>
         {/* image */}
         <div>
           <img className='lg:h-[600px] md:h-[450px] rounded-md md:block hidden'  src={pic.src} alt="" />
@@ -21,8 +21,8 @@ export default function About() {
         <div className='sm:w-[700px] w-full mt-5 lg:ml-28 ml-  md:ml-10 mr-5'>
           {/* head */}
           <div className='sm:w-[450px]   '>
-        <h1 className='text-6xl font-semibold font-sen mb-6 '>About Me</h1>
-        <p className='text-xl font-roboto '>Knows ReactJS, NextJS, HTML, CSS, Javascript, Typescript and Tailwind CSS and currently learning AI at Governer Initiative of genAI, Web3 and Mataverse.</p>
+        <h1 className='xs:text-6xl text-4xl font-semibold  font-sen mb-6 '>About Me</h1>
+        <p className='xs:text-xl text-lg font-roboto'>Knows ReactJS, NextJS, HTML, CSS, Javascript, Typescript and Tailwind CSS and currently learning AI at Governer Initiative of genAI, Web3 and Mataverse.</p>
         </div>
         {/* skill exp edu */}
         <div>

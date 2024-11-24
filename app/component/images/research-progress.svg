@@ -1,0 +1,38 @@
+<svg width="180" height="180" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle
+    cx="60"
+    cy="60"
+    r="50"
+    fill="none"
+    stroke="#9ca3af"
+    stroke-width="13"
+  />
+  
+  <!-- Progress circle -->
+  <circle
+    cx="60"
+    cy="60"
+    r="50"
+    fill="none"
+    stroke="#77effc"
+    stroke-width="13"
+    stroke-dasharray="314"
+    stroke-dashoffset="62.8" 
+    stroke-linecap="round"
+    transform="rotate(-90 60 60)" 
+  />
+
+  <!-- Percentage text -->
+  <text
+    x="60"
+    y="60"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-size="20"
+    fill="#ffffff"
+    font-family="Roboto, sans-serif"
+  >
+    80%
+  </text>
+</svg>

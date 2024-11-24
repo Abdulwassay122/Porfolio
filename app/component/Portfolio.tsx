@@ -17,18 +17,18 @@ export default function Portfolio() {
   return (
     <>
       <section id="portfolio" className=" font-roboto py-14 bg-[#0e1010] flex flex-col items-center">
-        <h1 className="text-6xl font-sen font-semibold flex justify-center">
+        <h1 className="xs:text-6xl text-5xl font-sen font-semibold flex justify-center">
           My Work
         </h1>
 
-        <div className="w-[95%] my-[70px] grid row-auto 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center gap-20">
+        <div className="w-[95%] my-[70px] grid row-auto 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center   gap-10">
             {/* tabs */}
             <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
               <img className="w-full h-full " src={assignment06.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
                   <h4 className="font-bold text-xl">Static Design Responsive</h4>
-                  <p className="text-center">Contert Figma design using taiwind and nextjs.</p>
+                  <p className="text-center">Convert Figma design using taiwind and nextjs.</p>
                   <a target="_blank" href="https://ass-06-tailwind-design.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
                 </div>
               </div>

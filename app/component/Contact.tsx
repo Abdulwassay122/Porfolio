@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="flex justify-between md:flex-row  flex-col">
         <div className='md:w-[40%] sm:w-[80%]   lg:ml-32 sm:ml-16 xs:ml-10 ml-5    '>
             <div className='mb-9'>
-                <h1 className=' text-6xl font-sen font-semibold'>Contact Me</h1>
+                <h1 className='xs:text-6xl text-5xl font-sen font-semibold'>Contact Me</h1>
             </div>
         <div className='flex text-xl font-roboto items-center '><img className='h-7 m-2 my-4 mr-7' src={email.src} alt="" />aw122598@gmail.com</div>
         <div className='flex text-xl font-roboto items-center '><img className='h-7 m-2 my-4 mr-7' src={phone.src} alt="" />+92 319 1476707</div>

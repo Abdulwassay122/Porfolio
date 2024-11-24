@@ -62,6 +62,14 @@ const config: Config = {
           '0%': { opacity: '1', transform: 'translateX(0)' },
           '100%': { opacity: '0', transform: 'translateX(-100px)' },
         },
+        slideInNav: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        slideOutNav: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
         height0to100: {
           '0%': { height: '0%' },
           '100%': {  height: '100%' },
@@ -81,6 +89,8 @@ const config: Config = {
         widthExpand100: 'widthExpand100 0.2s ease-out forwards',
         fadeIn: 'fadeIn 0.3s ease-out forwards',
         fadeOut: 'fadeOut 0.3s ease-out forwards',
+        slideInNav: 'slideInNav 0.2s ease-out forwards',
+        slideOutNav: 'slideOutNav 0.2s ease-out forwards',
         height0to100: 'height0to100 0.5s ease-out forwards',
       
       },
@@ -90,6 +100,7 @@ const config: Config = {
       fontFamily:{
           sen: ["Sen", 'serif'],
           roboto:[  "Roboto", 'sans-serif'],
+          kanit:[  "Kanit", 'sans-serif'],
       },
       colors: {
         background: "var(--background)",
