@@ -27,9 +27,9 @@ export default function Navbar() {
           {/* <div id='cross' onClick={()=>toggleMenu()} className={`mx-5 cursor-pointer ${menuOpen ? '':'hidden'}`}><img className='h-5' src={cross.src} alt="" /></div> */}
         </button>
         </div>
-      <nav className='absolute'>
+      <nav className='md:relative absolute'>
        
-        <ul id='toggleMenu' className={`font-roboto md:flex-row md:mt-2.5  text-[20px] md:bg-black md:h-full bg-[#77effc] md:flex lg:mr-20 md:mr-6 flex-col md:w-full w-[200px] h-screen md:relative md:right-0 fixed  z-50 md:animate-none transition-right duration-300 top-0  ${menuOpen ? 'right-0':'right-[-200px]'}`}>
+        <ul id='toggleMenu' className={`font-roboto md:flex-row md:mt-2.5  text-[20px] md:bg-black md:h-full bg-[#77effc] md:flex lg:mr-20 md:mr-6 flex-col md:w-full w-[200px] h-screen md:relative md:right-0 md: fixed  z-50 md:animate-none transition-right duration-300 top-0  ${menuOpen ? 'right-0':'right-[-200px]'}`}>
         <div id='cross' onClick={()=>toggleMenu()} className={`mx-5 mt-8 cursor-pointer ${menuOpen ? '':'hidden'}`}><img className='h-7' src={cross.src} alt="" /></div>
           <div><li  onClick={()=> scrollToSection('home')} className="md:mx-3 md:my-0 my-3  mx-5 cursor-pointer  hover:widthExpand100  md:hover:text-[#77effc] w-fit"><div className='hover:animate-widthExpand100 hover:border-solid md:hover:border-[#77effc] hover:border-[#ffffff] hover:border-b-[3px]'>Home</div> </li></div>
           <div><li  onClick={()=> scrollToSection('about')} className="md:mx-3 md:my-0 my-3  mx-5 cursor-pointer  hover:widthExpand100  md:hover:text-[#77effc] w-fit"><div className='hover:animate-widthExpand100 hover:border-solid md:hover:border-[#77effc] hover:border-[#ffffff] hover:border-b-[3px]'>About</div> </li></div>
