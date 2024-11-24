@@ -29,3 +29,10 @@ body {
 html{
   scroll-behavior: smooth;
 }
+
+.opentogglemenu{
+  right: 0;
+}
+.closetogglemenu{
+  right: -200px;
+}

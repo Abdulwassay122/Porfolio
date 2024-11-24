@@ -29,7 +29,7 @@ export default function RootLayout({
         <title>Abdul Wassay Porfolio</title>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         {children}
       </body>

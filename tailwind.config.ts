@@ -63,12 +63,12 @@ const config: Config = {
           '100%': { opacity: '0', transform: 'translateX(-100px)' },
         },
         slideInNav: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0)' },
+          '0%': { right: '-150' },
+          '100%': { right: '0' },
         },
         slideOutNav: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(100%)' },
+          '0%': { transform: '0' },
+          '100%': { transform: '-150' },
         },
         height0to100: {
           '0%': { height: '0%' },
