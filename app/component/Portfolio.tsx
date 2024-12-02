@@ -5,6 +5,7 @@ import alarmClock from "./images/screencapture-abdulwassay122-github-io-Alarm-Cl
 import resumeBuilder from "./images/screencapture-resume-builder-122598-vercel-app-2024-10-26-09_21_35.png";
 import passGenerator from "./images/screencapture-abdulwassay122-github-io-Javascript-Password-Generator-2024-10-26-09_22_32.png";
 import assignment06 from "./images/ass-3.png";
+import realmeClone from "./images/realme-clone.png";
 import upArrow from "./images/upArrow.png";
 import htmlCSSPortfolio from "./images/html css portfolio.png";
 import externallink from "./images/visit22.png";
@@ -22,6 +23,18 @@ export default function Portfolio() {
         </h1>
 
         <div className="w-[95%] my-[70px] grid row-auto 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center   gap-10">
+            {/* tabs */}
+            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
+              <img className="w-full h-full " src={realmeClone.src} alt="" />
+              <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
+                <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
+                  <h4 className="font-bold text-xl">Landing Page</h4>
+                  <p className="text-center">Cloned Realme website Landing Page using Taiwind and Nextjs</p>
+                  <a target="_blank" href="https://realme-clone-pi.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                </div>
+              </div>
+            </div>
+            {/* tabs */}
             {/* tabs */}
             <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
               <img className="w-full h-full " src={assignment06.src} alt="" />
@@ -56,7 +69,7 @@ export default function Portfolio() {
               </div>
             </div>
             {/* tabs */}
-            <div className={`w-[300px] h-[400px] relative rounded-lg group overflow-hidden  2xl:block ${activeSection===true?'block':'hidden'} `}>
+            <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'} `}>
               <img className="w-full h-full " src={passGenerator.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
