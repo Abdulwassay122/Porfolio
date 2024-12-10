@@ -30,7 +30,7 @@ export default function Portfolio() {
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
                   <h4 className="font-bold text-xl">Ecommerce Website</h4>
-                  <p className="text-center">UX/UI Hackathon Ecommerce website using Nextjs and Taiwind CSS</p>
+                  <p className="text-center">UX/UI Hackathon Ecommerce website using Nextjs and Taiwind CSS (Deadline:24hours)</p>
                   <a target="_blank" href="https://hachathon-02.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
                 </div>
               </div>
