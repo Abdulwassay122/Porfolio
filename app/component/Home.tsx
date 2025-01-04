@@ -1,6 +1,6 @@
 import React from 'react'
-import Pic from './images/Untitled design (10).png'
-import Pic2 from './images/Untitled design (11).png'
+import Pic from './images/Untitled design (10) (1).png'
+import Pic2 from './images/Untitled design (11) (1).png'
 import Pic3 from './images/Untitled_design__12_-removebg-preview-removebg-preview (1)final.png'
 import facebool from './images/facebook (2).png'
 import instagram from './images/instagram (2).png'
