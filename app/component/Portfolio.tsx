@@ -5,6 +5,7 @@ import alarmClock from "./images/screencapture-abdulwassay122-github-io-Alarm-Cl
 import resumeBuilder from "./images/screencapture-resume-builder-122598-vercel-app-2024-10-26-09_21_35.png";
 import passGenerator from "./images/screencapture-abdulwassay122-github-io-Javascript-Password-Generator-2024-10-26-09_22_32.png";
 import assignment06 from "./images/ass-3.png";
+import BlogWebsite from "./images/screencapture-blog-website-rouge-three-vercel-app-2025-01-07-13_52_21.png";
 import realmeClone from "./images/realme-clone.png";
 import Hackathon from "./images/screencapture-hachathon-02-vercel-app-2024-12-10-11_09_221111111.png";
 import upArrow from "./images/upArrow.png";
@@ -24,7 +25,18 @@ export default function Portfolio() {
         </h1>
 
         <div className="w-[95%] my-[70px] grid row-auto 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center   gap-10">
-            {/* tabs */}
+            {/* tabs ---------------1*/}
+            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
+              <img className="w-full h-full " src={BlogWebsite.src} alt="" />
+              <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
+                <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
+                  <h4 className="font-bold text-xl">Techverse</h4>
+                  <p className="text-center">Blog Website Using Sanity, NextJs, Tailwind CSS.</p>
+                  <a target="_blank" href="https://blog-website-rouge-three.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                </div>
+              </div>
+            </div>
+            {/* tabs ---------2*/}
             <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
               <img className="w-full h-full " src={Hackathon.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
@@ -35,7 +47,7 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            {/* tabs */}
+            {/* tabs ------------3*/}
             <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
               <img className="w-full h-full " src={realmeClone.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
@@ -47,18 +59,7 @@ export default function Portfolio() {
               </div>
             </div>
             {/* tabs */}
-            {/* tabs */}
-            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
-              <img className="w-full h-full " src={assignment06.src} alt="" />
-              <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
-                <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
-                  <h4 className="font-bold text-xl">Static Design Responsive</h4>
-                  <p className="text-center">Convert Figma design using taiwind and nextjs.</p>
-                  <a target="_blank" href="https://ass-06-tailwind-design.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
-                </div>
-              </div>
-            </div>
-            {/* tabs */}
+            {/* tabs ----------4*/}
             <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
               <img className="w-full h-full " src={textUtils.src} alt="" />
               <div className=" w-full h-0   absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
@@ -69,7 +70,18 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            {/* tabs */}
+            {/* tabs -------5*/}
+            <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'}  `}>
+              <img className="w-full h-full " src={assignment06.src} alt="" />
+              <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
+                <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
+                  <h4 className="font-bold text-xl">Static Design Responsive</h4>
+                  <p className="text-center">Convert Figma design using taiwind and nextjs.</p>
+                  <a target="_blank" href="https://ass-06-tailwind-design.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                </div>
+              </div>
+            </div>
+            {/* tabs ---------6*/}
             <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'}  `}>
               <img className="w-full h-full " src={resumeBuilder.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
@@ -80,7 +92,7 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            {/* tabs */}
+            {/* tabs -----------7*/}
             <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'} `}>
               <img className="w-full h-full " src={passGenerator.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
@@ -92,7 +104,7 @@ export default function Portfolio() {
               </div>
             </div>
            
-            {/* tabs */}
+            {/* tabs -------------8*/}
             <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'}`}>
               <img className="w-full h-full " src={alarmClock.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
@@ -103,14 +115,14 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            {/* tabs */}
+            {/* tabs ------------9*/}
             <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'}`}>
               <img className="w-full h-full " src={htmlCSSPortfolio.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
                   <h4 className="font-bold text-xl">Portfolio</h4>
                   <p className="text-center">Multipage Potfolio using custom CSS.</p>
-                  <a target="_blank" href="https://abdulwassay122.github.io/Alarm-Clock/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                  <a target="_blank" href="https://portfolio-html-css-inky.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
                 </div>
               </div>
             </div>
