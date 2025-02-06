@@ -10,6 +10,7 @@ import realmeClone from "./images/realme-clone.png";
 import Hackathon from "./images/screencapture-hachathon-02-vercel-app-2024-12-10-11_09_221111111.png";
 import upArrow from "./images/upArrow.png";
 import htmlCSSPortfolio from "./images/html css portfolio.png";
+import Nike from "./images/Untitled design (1).png";
 import externallink from "./images/visit22.png";
 
 ;
@@ -27,10 +28,21 @@ export default function Portfolio() {
         <div className="w-[95%] my-[70px] grid row-auto 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center   gap-10">
             {/* tabs ---------------1*/}
             <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
+              <img className="w-full h-full " src={Nike.src} alt="" />
+              <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
+                <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
+                  <h4 className="font-bold text-xl">Nike - Full Stack</h4>
+                  <p className="text-center">A Next.js e-commerce platform with Sanity CMS, JWT authentication, Stripe payments, dynamic products, cart management and email verification.</p>
+                  <a target="_blank" href="https://hackathon-03-one.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
+                </div>
+              </div>
+            </div>
+            {/* tabs ---------------1*/}
+            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
               <img className="w-full h-full " src={BlogWebsite.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
-                  <h4 className="font-bold text-xl">Techverse</h4>
+                  <h4 className="font-bold text-xl">Techverse - Full Stack</h4>
                   <p className="text-center">Blog Website Using Sanity, NextJs, Tailwind CSS.</p>
                   <a target="_blank" href="https://blog-website-rouge-three.vercel.app/"><img className="h-5 mt-[3px] ml-2" src={externallink.src} alt="" /></a>
                 </div>
