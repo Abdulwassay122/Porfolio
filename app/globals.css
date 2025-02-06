@@ -17,6 +17,14 @@
   }
 }
 
+.scrollbar-hidden {
+  scrollbar-width: none; /* For Firefox */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

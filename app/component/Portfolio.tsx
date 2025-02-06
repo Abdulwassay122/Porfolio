@@ -8,26 +8,56 @@ import assignment06 from "./images/ass-3.png";
 import BlogWebsite from "./images/screencapture-blog-website-rouge-three-vercel-app-2025-01-07-13_52_21.png";
 import realmeClone from "./images/realme-clone.png";
 import Hackathon from "./images/screencapture-hachathon-02-vercel-app-2024-12-10-11_09_221111111.png";
-import upArrow from "./images/upArrow.png";
+import arrowleft from "./images/Vector (8).svg";
+import arrowright from "./images/Vector (9).svg";
 import htmlCSSPortfolio from "./images/html css portfolio.png";
 import Nike from "./images/Untitled design (1).png";
 import externallink from "./images/visit22.png";
+import Image from "next/image";
 
 ;
 
 export default function Portfolio() {
-  const [activeSection, setActiveSection] = useState<boolean>(false);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
+  const handleNext = () => {
+    if (currentIndex < 9*340) {
+      setCurrentIndex(currentIndex + 340);
+    }else{
+      setCurrentIndex(0)
+    }
+  };
+
+  const handlePrev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 340);
+    }
+  };
   return (
     <>
-      <section id="portfolio" className=" font-roboto py-14 bg-[#0e1010] flex flex-col items-center">
+      <section id="portfolio" className=" font-roboto py-14 px-3 bg-[#0e1010] relative justify-center flex flex-col items-center">
         <h1 className="xs:text-6xl text-5xl font-sen font-semibold flex justify-center">
           My Work
         </h1>
 
-        <div className="w-[95%] my-[70px] grid row-auto 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-items-center   gap-10">
+            <div className='flex gap-3 w-full absolute z-10 items-center opacity-50 justify-between'>
+                <button onClick={handlePrev} className='h-12 w-12 flex justify-center items-center rounded-full bg-[#e2dfdf]'>
+                    <Image className={`${currentIndex < 340 ? 'block': 'hidden'}`} src={arrowleft} alt="" />
+                    <Image className={`rotate-180 ${currentIndex >= 340 ? 'block': 'hidden'}`} src={arrowright} alt="" />
+                </button>
+                <button onClick={handleNext} className='h-12 w-12 flex justify-center items-center rounded-full bg-[#e2dfdf]'>
+                    <Image className={`rotate-180 ${currentIndex >= 9*340 ? 'block': 'hidden'}`} src={arrowleft} alt="" />
+                    <Image className={`${currentIndex < 9*340 ? 'block': 'hidden'}`} src={arrowright} alt="" />
+                </button>
+            </div>
+
+        <div className="w-[93vw] my-[70px] xs:p-0 flex overflow-x-hidden items-center scrollbar-hidden gap-10 " >
+
+
             {/* tabs ---------------1*/}
-            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
+            <div className="min-w-[300px] h-[400px] relative rounded-lg group overflow-hidden transition-all duration-200" style={{
+            transform: `translateX(-${currentIndex}px)`,
+          }}>
               <img className="w-full h-full " src={Nike.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
@@ -38,7 +68,9 @@ export default function Portfolio() {
               </div>
             </div>
             {/* tabs ---------------1*/}
-            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
+            <div className="min-w-[300px] h-[400px] relative rounded-lg group overflow-hidden transition-all duration-200" style={{
+            transform: `translateX(-${currentIndex}px)`,
+          }}>
               <img className="w-full h-full " src={BlogWebsite.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
@@ -49,7 +81,9 @@ export default function Portfolio() {
               </div>
             </div>
             {/* tabs ---------2*/}
-            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
+            <div className="min-w-[300px] h-[400px] relative rounded-lg group overflow-hidden transition-all duration-200" style={{
+            transform: `translateX(-${currentIndex}px)`,
+          }}>
               <img className="w-full h-full " src={Hackathon.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
@@ -60,7 +94,9 @@ export default function Portfolio() {
               </div>
             </div>
             {/* tabs ------------3*/}
-            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
+            <div className="min-w-[300px] h-[400px] relative rounded-lg group overflow-hidden transition-all duration-200" style={{
+            transform: `translateX(-${currentIndex}px)`,
+          }}>
               <img className="w-full h-full " src={realmeClone.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
@@ -72,7 +108,9 @@ export default function Portfolio() {
             </div>
             {/* tabs */}
             {/* tabs ----------4*/}
-            <div className="w-[300px] h-[400px] relative rounded-lg group overflow-hidden">
+            <div className="min-w-[300px] h-[400px] relative rounded-lg group overflow-hidden transition-all duration-200" style={{
+            transform: `translateX(-${currentIndex}px)`,
+          }}>
               <img className="w-full h-full " src={textUtils.src} alt="" />
               <div className=" w-full h-0   absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
@@ -83,7 +121,9 @@ export default function Portfolio() {
               </div>
             </div>
             {/* tabs -------5*/}
-            <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'}  `}>
+            <div className={`min-w-[300px] h-[400px] relative  rounded-lg group overflow-hidden transition-all duration-200 `} style={{
+            transform: `translateX(-${currentIndex}px)`,
+          }}>
               <img className="w-full h-full " src={assignment06.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
@@ -94,7 +134,9 @@ export default function Portfolio() {
               </div>
             </div>
             {/* tabs ---------6*/}
-            <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'}  `}>
+            <div className={`min-w-[300px] h-[400px] relative  rounded-lg group overflow-hidden transition-all duration-200 `} style={{
+            transform: `translateX(-${currentIndex}px)`,
+          }}>
               <img className="w-full h-full " src={resumeBuilder.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden  h-full flex flex-col items-center justify-center gap-3">
@@ -105,7 +147,9 @@ export default function Portfolio() {
               </div>
             </div>
             {/* tabs -----------7*/}
-            <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'} `}>
+            <div className={`min-w-[300px] h-[400px] relative  rounded-lg group overflow-hidden transition-all duration-200 `} style={{
+            transform: `translateX(-${currentIndex}px)`,
+          }}>
               <img className="w-full h-full " src={passGenerator.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
@@ -117,7 +161,9 @@ export default function Portfolio() {
             </div>
            
             {/* tabs -------------8*/}
-            <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'}`}>
+            <div className={`min-w-[300px] h-[400px] relative  rounded-lg group overflow-hidden transition-all duration-200`} style={{
+            transform: `translateX(-${currentIndex}px)`,
+          }}>
               <img className="w-full h-full " src={alarmClock.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
@@ -128,7 +174,9 @@ export default function Portfolio() {
               </div>
             </div>
             {/* tabs ------------9*/}
-            <div className={`w-[300px] h-[400px] relative  rounded-lg group overflow-hidden ${activeSection===true?'block':'hidden'}`}>
+            <div className={`min-w-[300px] h-[400px] relative  rounded-lg group overflow-hidden transition-all duration-200`} style={{
+            transform: `translateX(-${currentIndex}px)`,
+          }}>
               <img className="w-full h-full " src={htmlCSSPortfolio.src} alt="" />
               <div className=" w-full h-0  absolute bottom-0 flex justify-center group-hover:h-[100%] transition-height duration-500  rounded-lg bg-gradient-to-t from-30  from-[#77effc] bg-black bg-opacity-50   text-opacity-100 ">
                 <div className="w-[80%] inset-0 overflow-hidden h-full flex flex-col items-center justify-center gap-3">
@@ -140,8 +188,6 @@ export default function Portfolio() {
             </div>
 
         </div>
-            <button onClick={()=>setActiveSection(true)}  className={`bg-[#77effc] py-2 px-6 rounded-md mt-5 sm:ml-7 ml-0 font-roboto font-semibold flex ${activeSection===false?'block':'hidden'}`}>View All<img className="h-3 mt-[5px] ml-[5px]" src={upArrow.src} alt="" /></button>
-            <button onClick={()=>setActiveSection(false)}  className={`bg-[#77effc] py-2 px-6 rounded-md mt-5 sm:ml-7 ml-0 font-roboto flex  font-semibold ${activeSection===true?'block':'hidden'}`}>Hide<img className="rotate-180 h-3 mt-[6px] ml-[5px]" src={upArrow.src} alt="" /></button>
 
       </section>
     </>

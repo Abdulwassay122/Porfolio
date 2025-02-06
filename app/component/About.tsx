@@ -2,7 +2,6 @@
 import React from 'react'
 import { useState } from 'react';
 import pic from './images/laptop-8236497_1280.jpg'
-import Image from 'next/image'
 
 
 type Section = 'skills' | 'education' | 'experience';
@@ -41,10 +40,12 @@ export default function About() {
         </div>
 
         <div className={`mt-12 font-roboto ${activeSection==='education'?'block animate-fadeIn':'hidden animate-fadeOut'} `}>
-          <p className='text-red-400 text-[16px] my-1'>2020 to 2022</p>
-          <p className='text-[20px] my-1'>Matric - Science</p>
+          <p className='text-red-400 text-[16px] my-1 mt-5'>2025 to 2029</p>
+          <p className='text-[20px] my-1'>BS - Computer Science</p>
           <p className='text-red-400 text-[16px] my-1 mt-5'>2022 to 2024</p>
           <p className='text-[20px] my-1'>FSC - Pre Engineering</p>
+          <p className='text-red-400 mt-5 text-[16px] my-1'>2020 to 2022</p>
+          <p className='text-[20px] my-1'>Matric - Science</p>
         </div>
 
         <div className={`mt-12 font-roboto ${activeSection==='experience'?'block animate-fadeIn':'hidden animate-fadeOut'} `}>
