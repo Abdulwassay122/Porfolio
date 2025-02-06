@@ -12,7 +12,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const siteMetadata = {
+export const metadata = {
   title: "Abdul Wassay | Frontend Developer & Next.js Expert",
   description: "Abdul Wassay is a frontend developer specializing in Next.js, React.js, and modern web technologies. Explore his portfolio, projects, and expertise.",
   keywords: "Abdul Wassay, frontend developer, Next.js, React.js, portfolio, web development",
@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>{siteMetadata.title}</title>
+        <title>{metadata.title}</title>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
