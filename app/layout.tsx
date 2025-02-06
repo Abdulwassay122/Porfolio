@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Pic from './component/images/Untitled design.png'
@@ -12,35 +13,26 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const Metadata = {
-  title: "Abdul Wassay | Frontend Developer & Next.js Expert",
-  description: "Abdul Wassay is a frontend developer specializing in Next.js, React.js, and modern web technologies. Explore his portfolio, projects, and expertise.",
-  keywords: "Abdul Wassay, frontend developer, Next.js, React.js, portfolio, web development",
-  author: "Abdul Wassay",
+
+export const metadata: Metadata = {
+  title: "Abdul Wassay | Portfolio",
+  description: "Frontend Developer specializing in Next.js and React.js",
+  keywords: "Frontend Developer, React.js, Next.js, JavaScript, Portfolio",
+  authors: [{ name: "Abdul Wassay", url: "https://yourwebsite.com" }],
   openGraph: {
-    title: "Abdul Wassay | Frontend Developer & Next.js Expert",
-    description: "Check out Abdul Wassay's projects and expertise in modern web development.",
-    url: "https://porfolio-lac-seven.vercel.app/", // Replace with your actual portfolio URL
+    title: "Abdul Wassay | Portfolio",
+    description: "Frontend Developer specializing in Next.js and React.js",
+    url: "https://yourwebsite.com",
+    siteName: "Abdul Wassay Portfolio",
     type: "website",
-    images: [
-      {
-        url: {Pic}, // Replace with your actual image URL
-        width: 1200,
-        height: 630,
-        alt: "Abdul Wassay Portfolio",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Abdul Wassay | Frontend Developer & Next.js Expert",
-    description: "Explore Abdul Wassay’s portfolio and web development projects.",
-    images: [`${Pic}`], // Replace with actual image
   },
   icons: {
-    icon: "/favicon.ico", // Path to favicon
-  }
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon-16x16.png",
+  },
 };
+
 
 
 export default function RootLayout({
@@ -50,9 +42,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <title>{Metadata.title}</title>
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
