@@ -40,17 +40,17 @@ export default function About() {
         </div>
 
         <div className={`mt-12 font-roboto ${activeSection==='education'?'block animate-fadeIn':'hidden animate-fadeOut'} `}>
-          <p className='text-red-400 text-[16px] my-1 mt-5'>2025 to 2029</p>
+          <p className='text-red-400 text-[16px] my-1 mt-5'>2025 to 2028</p>
           <p className='text-[20px] my-1'>BS - Computer Science</p>
+          <p className='text-red-400 mt-5 text-[16px] my-1'>2024 to 2025</p>
+          <p className='text-[20px] my-1'>Diploma - Artificial Intelligence</p>
           <p className='text-red-400 text-[16px] my-1 mt-5'>2022 to 2024</p>
           <p className='text-[20px] my-1'>FSC - Pre Engineering</p>
-          <p className='text-red-400 mt-5 text-[16px] my-1'>2020 to 2022</p>
-          <p className='text-[20px] my-1'>Matric - Science</p>
         </div>
 
         <div className={`mt-12 font-roboto ${activeSection==='experience'?'block animate-fadeIn':'hidden animate-fadeOut'} `}>
           <p className='text-[20px] my-1'>Fresher</p>
-          <p className='text-red-400 text-[16px] my-1'>2023 to 2024</p> 
+          <p className='text-red-400 text-[16px] my-1'>2023 to 2025</p> 
           <p className='text-[20px] my-1'>Self Learing Experience</p>
         </div>
 

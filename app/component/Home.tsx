@@ -62,7 +62,7 @@ export default function Home() {
           <a target='_blank' href="https://github.com/Abdulwassay122?tab=repositories"><img className='h-8 m-2 mx-3' src={github.src} alt="" /></a>
           </div>
           <div className='flex flex-row w-fit'>
-            <button  className='bg-[#77effc] py-2 px-6 rounded-md mt-5 font-roboto font-semibold'><a target='_blank' href="https://www.canva.com/design/DAGXZCin1sA/fRCX8gDpUaCc-ladkssLUg/view?utm_content=DAGXZCin1sA&utm_campaign=designshare&utm_medium=link&utm_source=editor">Download CV</a></button>
+            <button  className='bg-[#77effc] py-2 px-6 rounded-md mt-5 font-roboto font-semibold'><a target='_blank' href="https://www.canva.com/design/DAGEDQIi9Mw/uM3uxDmwLD0e8CWN4QgCJg/view?utm_content=DAGEDQIi9Mw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb4c8c8950d">Download CV</a></button>
             <button onClick={()=> scrollToSection('contact')}  className='bg-[#77effc] py-2 px-6 rounded-md mt-5 ml-7 font-roboto font-semibold'>Contact</button>
           </div>
         </div>
