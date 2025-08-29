@@ -44,3 +44,11 @@ html{
 .closetogglemenu{
   right: -200px;
 }
+
+.outlined-text {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ef4444;
+  -webkit-text-fill-color: transparent; /* Makes the inside of the text transparent */
+  /* font-size: 48px; */
+  /* font-family: Arial, sans-serif; */
+}

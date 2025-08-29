@@ -1,80 +1,170 @@
-"use client"
-import React, { useEffect, useState } from 'react'
-import Pic from './images/Untitled design (10) (1).png'
-import Pic2 from './images/Untitled design (11) (1).png'
-import Pic3 from './images/Untitled_design__12_-removebg-preview-removebg-preview (1)final.png'
-import facebool from './images/facebook (2).png'
-import instagram from './images/instagram (2).png'
-import linkdun from './images/linkdin.png'
-import github from './images/image.png'
-import Image from 'next/image'
+"use client";
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
-export default function Home() {
-  function scrollToSection(id:string){
-    const section:any = document.getElementById(id)
-    section.scrollIntoView({ behavior: 'smooth' })
-  }
-  // const words = ["Frontend Developer", "React.js Expert", "Next.js Enthusiast"];
-  // const [text, setText] = useState("");
-  // const [index, setIndex] = useState(0);
-  // const [charIndex, setCharIndex] = useState(0);
-  // const [deleting, setDeleting] = useState(false);
-  // const speed = deleting ? 50 : 100;
-  // useEffect(() => {
-  //   const timeout = setTimeout(() => {
-  //     if (!deleting && charIndex < words[index].length) {
-  //       setText((prev) => prev + words[index][charIndex]);
-  //       setCharIndex((prev) => prev + 1);
-  //     } else if (deleting && charIndex > 0) {
-  //       setText((prev) => prev.slice(0, -1));
-  //       setCharIndex((prev) => prev - 1);
-  //     } else if (!deleting && charIndex === words[index].length) {
-  //       setTimeout(() => setDeleting(true), 1000);
-  //     } else if (deleting && charIndex === 0) {
-  //       setDeleting(false);
-  //       setIndex((prev) => (prev + 1) % words.length);
-  //     }
-  //   }, speed);
+// images
+import Pic from "./images/main.pic.png"; // Desktop
+import Pic3 from "./images/Untitled_design__12_-removebg-preview-removebg-preview (1)final.png"; // Mobile
+import facebool from "./images/facebook (2).png";
+import instagram from "./images/instagram (2).png";
+import linkdun from "./images/linkdin.png";
+import github from "./images/image.png";
 
-  //   return () => clearTimeout(timeout);
-  // }, [charIndex, deleting, index]);
+export default function Home() {
+  function scrollToSection(id: string) {
+    const section: any = document.getElementById(id);
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
-    <>
-      <section id='home' className='flex sm:flex-row  pt-10 pb-10 justify-between bg-black  '>
-        <div className=' lg:mt-32  sm:mt-16  sm:ml-10 ml-5  md: mt-16 md:ml-20 animate-slideInLeft z-10 w-fit'>
-          <div className='text-2xl md:text-3xl  font-sen font-semibold w-fit '>Hello It's me</div>
-          <div className='text-6xl md:text-8xl w-fit  font-sen font-semibold'>ABDUL <div className='text-[#77effc]'>WASSAY</div></div>
-          <div className='text-2xl md:text-3xl mt-5 w-fit font-sen font-semibold'>And I'm a <span className='text-red-400 border-solid border-r-4 pr-2 border-white'> <Typewriter
-          words={["Frontend Developer", "React.js Expert", "Next.js Enthusiast"]}
-          loop={true}
-          cursor
-          cursorStyle=""
-          typeSpeed={100}
-          deleteSpeed={50}
-          delaySpeed={1500}
-        /></span></div>
-          
-          <div className='flex mt-6'>
-          <a target='_blank' href="https://www.facebook.com/profile.php?id=100089985213341"><img className='h-8 m-2 mx-3' src={facebool.src} alt="" /></a>
-          <a target='_blank' href="https://www.instagram.com/wassay122/"><img className='h-8 m-2 mx-3' src={instagram.src} alt="" /></a>
-          <a target='_blank' href="https://www.linkedin.com/in/abdul-wassay-74bb532b4/"><img className='h-8 m-2 mx-3' src={linkdun.src} alt="" /></a>
-          <a target='_blank' href="https://github.com/Abdulwassay122?tab=repositories"><img className='h-8 m-2 mx-3' src={github.src} alt="" /></a>
-          </div>
-          <div className='flex flex-row w-fit'>
-            <button  className='bg-[#77effc] py-2 px-6 rounded-md mt-5 font-roboto font-semibold'><a target='_blank' href="https://www.canva.com/design/DAGEDQIi9Mw/uM3uxDmwLD0e8CWN4QgCJg/view?utm_content=DAGEDQIi9Mw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb4c8c8950d">Download CV</a></button>
-            <button onClick={()=> scrollToSection('contact')}  className='bg-[#77effc] py-2 px-6 rounded-md mt-5 ml-7 font-roboto font-semibold'>Contact</button>
-          </div>
+    <section
+      id="home"
+      className="bg-black bg-[url('/axiom.png')] relative flex flex-row items-center justify-between 
+  mt-[85px] pt-20 pb-10 px-6 md:px-16 lg:px-24 overflow-hidden"
+    >
+      {/* Left Content */}
+      <motion.div
+        initial={{ x: -150, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="relative z-20 max-w-2xl"
+      >
+        <div className="text-lg sm:text-xl font-sen font-medium text-gray-300">
+          Hello, It's me
         </div>
-        {/* image */}
-        <div className='flex flex-col xl:mr-28 lg:mr-8 animate-slideInRight sm:relative absolute right-0'>
-        <div ><Image height={900} width={900} className='hidden xl:block h-[600px] w-auto lg:block md:hidden   ' src={Pic} alt="Abdul Wassay Photo" /></div>
-        <div ><Image height={900} width={900}  className=' md:h-[500px] sm:h-[400px] xs:hidden hidden items-center sm:block  w-[auto] md:block lg:hidden     ' src={Pic2} alt="Abdul Wassay Photo" /></div>
-        <div ><Image height={900} width={900} className="sm:hidden  xs:block items-center h-[400px]   w-[auto]  " src={Pic3} alt="Abdul Wassay Photo" /></div>
-        {/* <div className=' bg[url("/imge3.png")] h-[400px] w-[200px] bg-cover bg-left'>q</div> */}
-        {/* <div className=' ml-[850px] mt-[660px] w-[618px] absolute inset-0 bg-gradient-to-t from-black from-50%'></div> */}
+
+        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-sen font-extrabold mt-2 leading-tight">
+          <span className="text-[#77effc] drop-shadow-lg">ABDUL</span>{" "}
+          <span className="block text-white">WASSAY</span>
+        </h1>
+
+        <h2 className="text-2xl sm:text-3xl mt-6 font-sen font-semibold text-gray-200">
+          And I'm a{" "}
+          <span className="text-red-400 border-solid border-r-4 pr-2 border-white">
+            <Typewriter
+              words={[
+                "Full Stack Developer",
+                "MERN Stack Developer",
+                "React & Next.js Developer",
+                "Learning AI",
+              ]}
+              loop={true}
+              cursor
+              cursorStyle=""
+              typeSpeed={100}
+              deleteSpeed={50}
+              delaySpeed={1500}
+            />
+          </span>
+        </h2>
+
+        {/* Social Icons */}
+        <div className="flex mt-8 space-x-6">
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=100089985213341"
+          >
+            <motion.img
+              whileHover={{ scale: 1.2 }}
+              className="h-8"
+              src={facebool.src}
+              alt="Facebook"
+            />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/wassay122/">
+            <motion.img
+              whileHover={{ scale: 1.2 }}
+              className="h-8"
+              src={instagram.src}
+              alt="Instagram"
+            />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/abdul-wassay-74bb532b4/"
+          >
+            <motion.img
+              whileHover={{ scale: 1.2 }}
+              className="h-8"
+              src={linkdun.src}
+              alt="LinkedIn"
+            />
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/Abdulwassay122?tab=repositories"
+          >
+            <motion.img
+              whileHover={{ scale: 1.2 }}
+              className="h-8"
+              src={github.src}
+              alt="Github"
+            />
+          </a>
         </div>
-      </section>
-    </>
-  )
+
+        {/* Buttons */}
+        <div className="flex mt-8 space-x-6">
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            href="https://drive.google.com/file/d/14ZoeTY1RfTogXq0EGQ6GQVe7CS_ZlGKn/view?usp=sharing"
+            target="_blank"
+            className="min-w-[152px] px-6 py-3 rounded-lg bg-gradient-to-r from-[#00b7ff] to-[#77effc] text-white font-bold shadow-lg hover:shadow-cyan-400/50 transition-all"
+          >
+            Download CV
+          </motion.a>
+
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            onClick={() => scrollToSection("contact")}
+            className="min-w-[107px] px-6 py-3 rounded-lg bg-gradient-to-r from-[#f65d5d] to-red-500 text-white font-bold shadow-lg hover:shadow-red-400/50 transition-all"
+          >
+            Contact
+          </motion.button>
+        </div>
+      </motion.div>
+
+      {/* Right Image (always absolute, sticks right) */}
+      <motion.div
+        initial={{ x: 150, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="mt-12 lg:mt-0 flex justify-end w-full lg:w-auto"
+      >
+        {/* Desktop (lg and up) */}
+        <div className="hidden lg:block">
+          <Image
+            height={900}
+            width={900}
+            className="h-[600px] w-auto shadow-xl object-cover animate-bounce-slow"
+            src={Pic}
+            alt="Abdul Wassay"
+          />
+        </div>
+
+        <div className="hidden md:block lg:hidden">
+          <Image
+            height={900}
+            width={900}
+            className="h-[400px] w-auto shadow-xl object-cover animate-bounce-slow"
+            src={Pic}
+            alt="Abdul Wassay"
+          />
+        </div>
+
+        {/* Tablet & Mobile (absolute right) */}
+        <div className="block md:hidden">
+          <Image
+            height={900}
+            width={900}
+            className="h-[400px] w-auto object-cover animate-bounce-slow absolute right-0 top-[85px]"
+            src={Pic3}
+            alt="Abdul Wassay"
+          />
+        </div>
+      </motion.div>
+    </section>
+  );
 }

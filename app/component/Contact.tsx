@@ -1,50 +1,124 @@
-import React from 'react'
-import email from './images/Email (2).png'
-import phone from './images/phonee.png'
-import facebool from './images/facebook (2).png'
-import instagram from './images/instagram (2).png'
-import linkdun from './images/linkdin.png'
-import loction from './images/locationn.png'
-import github from './images/image.png'    
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import email from "./images/Email (2).png";
+import phone from "./images/phonee.png";
+import facebook from "./images/facebook (2).png";
+import instagram from "./images/instagram (2).png";
+import linkedin from "./images/linkdin.png";
+import location from "./images/locationn.png";
+import github from "./images/image.png";
 
 export default function Contact() {
   return (
-    <>
-      <section id='contact' className='py-20   bg-black '>
-        <div className="flex justify-between md:flex-row  flex-col">
-        <div className='md:w-[40%] sm:w-[80%]   lg:ml-32 sm:ml-16 xs:ml-10 ml-5    '>
-            <div className='mb-9'>
-                <h1 className='xs:text-6xl text-5xl font-sen font-semibold'>Contact Me</h1>
+    <section
+      id="contact"
+      className="relative py-20 bg-gradient-to-b from-black via-gray-900 to-black text-white overflow-hidden"
+    >
+      {/* Background Glow */}
+      {/* <div className="absolute -top-32 -left-32 w-96 h-96 bg-cyan-500/30 rounded-full blur-3xl"></div> */}
+      {/* <div className="absolute bottom-0 -right-40 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-3xl"></div> */}
+
+      <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center relative z-10">
+        {/* Left Side - Info */}
+        <motion.div
+          initial={{ x: -150, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          className="md:w-[45%] w-full mb-12 md:mb-0"
+        >
+          <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-white bg-clip-text text-transparent">
+            Contact Me
+          </h1>
+          <p className="text-gray-300 mb-8 text-lg">
+            Let’s connect! Whether you want to collaborate, discuss a project,
+            or just say hi feel free to reach out.
+          </p>
+
+          <div className="space-y-4">
+            <div className="flex items-center gap-4 text-lg">
+              <img src={email.src} className="h-7" alt="email" />
+              <span>aw122598@gmail.com</span>
             </div>
-        <div className='flex text-xl font-roboto items-center '><img className='h-7 m-2 my-4 mr-7' src={email.src} alt="" />aw122598@gmail.com</div>
-        <div className='flex text-xl font-roboto items-center '><img className='h-7 m-2 my-4 mr-7' src={phone.src} alt="" />+92 319 1476707</div>
-        <div className='flex text-xl font-roboto items-center '><img className='h-7 m-2 my-4 mr-7' src={loction.src} alt="" />123 Sector ABC XYZ Town Karachi Pakistan </div>
-        <div className='flex mt-5'>
-          <a target='_blank' href="https://www.facebook.com/profile.php?id=100089985213341"><img className='h-8 m-2 ml-2 mx-3' src={facebool.src} alt="" /></a>
-          <a target='_blank' href="https://www.instagram.com/wassay122/"><img className='h-8 m-2 mx-3' src={instagram.src} alt="" /></a>
-          <a target='_blank' href="https://www.linkedin.com/in/abdul-wassay-74bb532b4/"><img className='h-8 m-2 mx-3' src={linkdun.src} alt="" /></a>
-          <a target='_blank' href="https://github.com/Abdulwassay122?tab=repositories"><img className='h-8 m-2 mx-3' src={github.src} alt="" /></a>
+            <div className="flex items-center gap-4 text-lg">
+              <img src={phone.src} className="h-7" alt="phone" />
+              <span>+92 319 1476707</span>
+            </div>
+            <div className="flex items-center gap-4 text-lg">
+              <img src={location.src} className="h-7" alt="location" />
+              <span>Karachi, Pakistan</span>
+            </div>
           </div>
-          <div>
-            <button  className='bg-[#77effc] py-2 px-6 mx-2  rounded-md mt-10 font-roboto font-semibold'>Download CV</button>
+
+          {/* Social Links */}
+          <div className="flex gap-6 mt-8">
+            <a href="https://facebook.com" target="_blank">
+              <img
+                src={facebook.src}
+                className="h-8 hover:scale-110 transition-transform duration-300"
+                alt="facebook"
+              />
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <img
+                src={instagram.src}
+                className="h-8 hover:scale-110 transition-transform duration-300"
+                alt="instagram"
+              />
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+              <img
+                src={linkedin.src}
+                className="h-8 hover:scale-110 transition-transform duration-300"
+                alt="linkedin"
+              />
+            </a>
+            <a href="https://github.com" target="_blank">
+              <img
+                src={github.src}
+                className="h-8 hover:scale-110 transition-transform duration-300"
+                alt="github"
+              />
+            </a>
           </div>
-        </div>
-        <div className='md:w-[50%] sm:w-[80%]   md:ml-0 sm:ml-16 xs:ml-10 ml-5 font-roboto text-xl md:mr-0 sm:mr-10 mr-5'>
-            <div className='md:w-[80%] my-5  w-[100%] '>
-                 <input placeholder='Your Name' className=' w-[100%] bg-[#202020] h-10 rounded-sm px-4' type="text" />
-            </div>
-            <div className='md:w-[80%]  my-5 w-[100%]  '>
-                <input placeholder='Your Email' className=' w-[100%] bg-[#202020]  h-10 rounded-sm px-4' type="email" />
-            </div>
-            <div className='md:w-[80%]  my-5 w-[100%]  '>
-                <textarea placeholder='Your Message' className=' w-[100%] bg-[#202020] h-[250px] py-2 px-4 rounded-sm text-left'  />
-            </div>
-            <div>
-            <button  className='bg-[#77effc] py-2 px-6   rounded-md mt-9 font-roboto font-semibold'>Submit</button>
-          </div>
-        </div>
-        </div>
-      </section>
-    </>
-  )
+
+          <button className="mt-10 bg-gradient-to-r from-[#00b7ff] to-[#77effc] text-black font-semibold py-3 px-8 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+            Download CV
+          </button>
+        </motion.div>
+
+        {/* Right Side - Contact Form */}
+        <motion.div
+          initial={{ x: 150, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+          // className="md:w-[50%] w-full bg-white/5 backdrop-blur-lg rounded-2xl p-8 shadow-xl"
+        >
+          <form className="space-y-6">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-400 focus:ring-2 focus:ring-[#77effc] outline-none"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-400 focus:ring-2 focus:ring-[#77effc] outline-none"
+            />
+            <textarea
+              placeholder="Your Message"
+              rows={5}
+              className="w-full px-4 py-3 rounded-lg bg-white/10 text-white placeholder-gray-400 focus:ring-2 focus:ring-[#77effc] outline-none"
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full bg-gradient-to-r from-[#00b7ff] to-[#77effc] text-black font-semibold py-3 px-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+            >
+              Submit
+            </button>
+          </form>
+        </motion.div>
+      </div>
+    </section>
+  );
 }
