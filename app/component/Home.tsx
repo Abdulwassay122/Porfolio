@@ -22,7 +22,7 @@ export default function Home() {
     <section
       id="home"
       className="bg-black bg-[url('/axiom.png')] relative flex flex-row items-center justify-between 
-  mt-[85px] pt-20 pb-10 px-6 md:px-16 lg:px-24 overflow-hidden"
+  pt-[85px] pt-20 pb-10 px-6 md:px-16 lg:px-24 overflow-hidden"
     >
       {/* Left Content */}
       <motion.div
